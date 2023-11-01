@@ -11,16 +11,6 @@ spring:
   cloud:
     gateway:
       routes:
-        - id: users-status-check
-          uri: lb://users-ws
-          predicates:
-            - Path=/users-ws/users/status/check
-            - Method=GET
-            - Header=Authorization, Bearer (.*)
-          filters:
-            - RemoveRequestHeader=Cookie
-            - RewritePath=/users-ws/(?<segment>.*), /$\{segment}
-#            - AuthorizationHeaderFilter
         - id: users-ws
           uri: lb://users-ws
           predicates:
@@ -28,6 +18,16 @@ spring:
             - Method=POST
           filters:
             - RemoveRequestHeader=Cookie
+            - RewritePath=/users-ws/(?<segment>.*), /$\{segment}
+        - id: users-ws-get-update-delete
+          uri: lb://users-ws
+          predicates:
+            - Path=/users-ws/users/**
+            - Method=GET,PUT,DELETE
+            - Header=Authorization, Bearer (.*)
+          filters:
+            - RemoveRequestHeader=Cookie
+            - AuthorizationHeaderFilter
             - RewritePath=/users-ws/(?<segment>.*), /$\{segment}
         - id: users-ws-login
           uri: lb://users-ws
@@ -37,21 +37,26 @@ spring:
           filters:
             - RemoveRequestHeader=Cookie
             - RewritePath=/users-ws/(?<segment>.*), /$\{segment}
-        - id: account-ws
-          uri: lb://account-ws
+        - id: users-status-check
+          uri: lb://users-ws
           predicates:
-            - Path=/account-ws/accounts
-            - Method=POST
+            - Path=/users-ws/users/status/check
+            - Method=GET
+            - Header=Authorization, Bearer (.*)
           filters:
             - RemoveRequestHeader=Cookie
-            - RewritePath=/account-ws/(?<segment>.*), /$\{segment}
-      discovery:
-        locator:
-          enabled: true
-          lower-case-service-id: true
+            - RewritePath=/users-ws/(?<segment>.*), /$\{segment}
+            - AuthorizationHeaderFilter
+#      discovery:
+#        locator:
+#          enabled: true
+#          lower-case-service-id: true
 eureka:
   client:
     service-url:
       default-zone: http://localhost:8761/eureka
   instance:
     instance-id: ${spring.application.name}:${spring.application.instance_id:${random.uuid}}
+
+token:
+  secret: 7t30WYh7K8A2RQnydbXhNV2150w9ukK30x14awhO3b5253mh1mK4rM2Z9gZksoT3t4NUdC

@@ -34,8 +34,17 @@ gateway:
 
 token:
   expiration-time: 3600000
-  secret: 77m3PLQi78JgU6FGTBLpN6401bA07ZM3GOVPnj5bgtUW314o4C
+  secret: 7t30WYh7K8A2RQnydbXhNV2150w9ukK30x14awhO3b5253mh1mK4rM2Z9gZksoT3t4NUdC
 
 login:
   url:
     path: /users/login
+
+management:
+  endpoint:
+    gateway:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: health,info,mapping
