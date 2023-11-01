@@ -1,4 +1,4 @@
-package com.pblgllgs.users.model;
+package com.pblgllgs.users.model.requests;
 
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;

@@ -1,4 +1,4 @@
-package com.pblgllgs.users.model;
+package com.pblgllgs.users.model.responses;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

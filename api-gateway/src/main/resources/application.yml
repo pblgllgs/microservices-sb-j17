@@ -11,14 +11,40 @@ spring:
   cloud:
     gateway:
       routes:
-        - id: users-service
+        - id: users-status-check
           uri: lb://users-ws
           predicates:
-            - Path=/users/**
-        - id: account-management-service
+            - Path=/users-ws/users/status/check
+            - Method=GET
+            - Header=Authorization, Bearer (.*)
+          filters:
+            - RemoveRequestHeader=Cookie
+            - RewritePath=/users-ws/(?<segment>.*), /$\{segment}
+#            - AuthorizationHeaderFilter
+        - id: users-ws
+          uri: lb://users-ws
+          predicates:
+            - Path=/users-ws/users
+            - Method=POST
+          filters:
+            - RemoveRequestHeader=Cookie
+            - RewritePath=/users-ws/(?<segment>.*), /$\{segment}
+        - id: users-ws-login
+          uri: lb://users-ws
+          predicates:
+            - Path=/users-ws/users/login
+            - Method=POST
+          filters:
+            - RemoveRequestHeader=Cookie
+            - RewritePath=/users-ws/(?<segment>.*), /$\{segment}
+        - id: account-ws
           uri: lb://account-ws
           predicates:
-            - Path=/account/**
+            - Path=/account-ws/accounts
+            - Method=POST
+          filters:
+            - RemoveRequestHeader=Cookie
+            - RewritePath=/account-ws/(?<segment>.*), /$\{segment}
       discovery:
         locator:
           enabled: true
