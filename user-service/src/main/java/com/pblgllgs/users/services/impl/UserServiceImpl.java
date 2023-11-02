@@ -54,7 +54,9 @@ public class UserServiceImpl implements UserService {
             throw new UsernameNotFoundException("user not found");
         }
         UserDto userDto = mapper.map(userEntity, UserDto.class);
+        log.debug("Before calling albums microservice");
         List<AlbumResponseModel> userAlbums = albumClient.getAlbums(userId);
+        log.debug("After calling albums microservice");
         userDto.setAlbums(userAlbums);
         return userDto;
     }

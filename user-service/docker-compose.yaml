@@ -31,6 +31,12 @@ services:
       RABBITMQ_DEFAULT_USER: guest
       RABBITMQ_DEFAULT_PASS: guest
 
+  zipkin:
+    container_name: zipkin
+    image: openzipkin/zipkin:2.24
+    ports:
+      - "9411:9411"
+
 volumes:
   volume_mysql_db_users:
     external: false

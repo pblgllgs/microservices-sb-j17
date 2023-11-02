@@ -44,6 +44,8 @@ public class SecurityConfig {
                                 .requestMatchers(HttpMethod.GET, "/users/{userId}").permitAll()
                                 .requestMatchers(HttpMethod.GET, "/users/status/check").permitAll()
                                 .requestMatchers(HttpMethod.GET, "/actuator/**").permitAll()
+                                .requestMatchers(HttpMethod.GET, "/actuator/circuitbreakerevents").permitAll()
+                                .requestMatchers(HttpMethod.GET, "/actuator/circuitbreakers").permitAll()
                 )
                 .addFilter(authenticationFilter)
                 .authenticationManager(authenticationManager)
