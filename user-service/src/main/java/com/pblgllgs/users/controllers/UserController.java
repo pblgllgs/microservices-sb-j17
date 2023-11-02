@@ -7,7 +7,9 @@ import com.pblgllgs.users.services.UserService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext;
+import org.springframework.core.env.Environment;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -20,10 +22,11 @@ public class UserController {
     private final ServletWebServerApplicationContext applicationContext;
     private final UserService userService;
     private final ModelMapper mapper;
+    private final Environment environment;
 
     @GetMapping("/status/check")
     public String status() {
-        return "Users Status UP on " + applicationContext.getWebServer().getPort();
+        return "Users Status UP on " + applicationContext.getWebServer().getPort()+" and "+ environment.getProperty("token.secret");
     }
 
     @PostMapping
