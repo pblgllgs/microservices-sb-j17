@@ -41,7 +41,9 @@ public class SecurityConfig {
                 .authorizeHttpRequests(http ->
                         http
                                 .requestMatchers(HttpMethod.POST, "/users").permitAll()
+                                .requestMatchers(HttpMethod.GET, "/users/{userId}").permitAll()
                                 .requestMatchers(HttpMethod.GET, "/users/status/check").permitAll()
+                                .requestMatchers(HttpMethod.GET, "/actuator/**").permitAll()
                 )
                 .addFilter(authenticationFilter)
                 .authenticationManager(authenticationManager)
