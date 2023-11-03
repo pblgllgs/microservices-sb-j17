@@ -827,3 +827,59 @@ Caused by: java.lang.IllegalArgumentException: Not a managed type: class com.pbl
 2023-11-02T22:19:13.035-03:00  INFO 87900 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
 2023-11-02T22:19:13.039-03:00  INFO 87900 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ALBUMS-WS/albums-ws:cfe8f10286a91e0a20cbf655a28c1444 - deregister  status: 200
 2023-11-02T22:19:13.070-03:00  INFO 87900 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2023-11-02T22:19:18.680-03:00  INFO 84512 --- [main] c.p.album.AlbumServiceApplication        : Starting AlbumServiceApplication using Java 17.0.2 with PID 84512 (E:\Spring\microservices\microservice-j17-sb3\album-service\target\classes started by pblgl in E:\Spring\microservices\microservice-j17-sb3)
+2023-11-02T22:19:18.681-03:00  INFO 84512 --- [main] c.p.album.AlbumServiceApplication        : No active profile set, falling back to 1 default profile: "default"
+2023-11-02T22:19:18.707-03:00  INFO 84512 --- [main] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:8888
+2023-11-02T22:19:18.708-03:00  INFO 84512 --- [main] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=albums-ws, profiles=[default], label=null, version=f1d1af4131adf798a92e7215d68dce1708d6f2b0, state=null
+2023-11-02T22:19:19.290-03:00  INFO 84512 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-11-02T22:19:19.412-03:00  INFO 84512 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 116 ms. Found 1 JPA repository interfaces.
+2023-11-02T22:19:19.565-03:00  INFO 84512 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=38b0423a-5d90-3fa0-bee5-557917123b81
+2023-11-02T22:19:19.878-03:00  INFO 84512 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2023-11-02T22:19:19.886-03:00  INFO 84512 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-11-02T22:19:19.887-03:00  INFO 84512 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.15]
+2023-11-02T22:19:19.982-03:00  INFO 84512 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-11-02T22:19:19.982-03:00  INFO 84512 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1273 ms
+2023-11-02T22:19:20.171-03:00  INFO 84512 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-11-02T22:19:20.208-03:00  INFO 84512 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.13.Final
+2023-11-02T22:19:20.209-03:00  INFO 84512 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-11-02T22:19:20.400-03:00  INFO 84512 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-11-02T22:19:20.419-03:00  INFO 84512 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-11-02T22:19:20.613-03:00  INFO 84512 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@71d2261e
+2023-11-02T22:19:20.614-03:00  INFO 84512 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-11-02T22:19:20.651-03:00  WARN 84512 --- [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2023-11-02T22:19:21.202-03:00  INFO 84512 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2023-11-02T22:19:21.235-03:00  INFO 84512 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-11-02T22:19:21.438-03:00  WARN 84512 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-11-02T22:19:22.775-03:00  INFO 84512 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-11-02T22:19:24.133-03:00  INFO 84512 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-11-02T22:19:24.138-03:00  INFO 84512 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2023-11-02T22:19:24.164-03:00  WARN 84512 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-11-02T22:19:24.167-03:00  INFO 84512 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-11-02T22:19:24.235-03:00  INFO 84512 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 52852 (http) with context path ''
+2023-11-02T22:19:24.236-03:00  INFO 84512 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 52852
+2023-11-02T22:19:24.239-03:00  INFO 84512 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2023-11-02T22:19:24.270-03:00  INFO 84512 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2023-11-02T22:19:24.274-03:00  INFO 84512 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-11-02T22:19:24.293-03:00  INFO 84512 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2023-11-02T22:19:24.293-03:00  INFO 84512 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2023-11-02T22:19:24.293-03:00  INFO 84512 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2023-11-02T22:19:24.293-03:00  INFO 84512 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2023-11-02T22:19:24.293-03:00  INFO 84512 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2023-11-02T22:19:24.293-03:00  INFO 84512 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2023-11-02T22:19:24.293-03:00  INFO 84512 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2023-11-02T22:19:24.485-03:00  INFO 84512 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2023-11-02T22:19:24.489-03:00  INFO 84512 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2023-11-02T22:19:24.494-03:00  INFO 84512 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2023-11-02T22:19:24.505-03:00  INFO 84512 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1698974364504 with initial instances count: 4
+2023-11-02T22:19:24.507-03:00  INFO 84512 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application ALBUMS-WS with eureka with status UP
+2023-11-02T22:19:24.507-03:00  INFO 84512 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1698974364507, current=UP, previous=STARTING]
+2023-11-02T22:19:24.508-03:00  INFO 84512 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ALBUMS-WS/albums-ws:c39f9040ab302cd772e2263827cffe24: registering service...
+2023-11-02T22:19:24.538-03:00  INFO 84512 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ALBUMS-WS/albums-ws:c39f9040ab302cd772e2263827cffe24 - registration status: 204
+2023-11-02T22:19:25.723-03:00  INFO 84512 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-11-02T22:19:25.736-03:00  INFO 84512 --- [main] c.p.album.AlbumServiceApplication        : Started AlbumServiceApplication in 10.195 seconds (process running for 10.632)
+2023-11-02T22:19:25.973-03:00  INFO 84512 --- [RMI TCP Connection(2)-192.168.99.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-02T22:19:25.973-03:00  INFO 84512 --- [RMI TCP Connection(2)-192.168.99.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-11-02T22:19:25.975-03:00  INFO 84512 --- [RMI TCP Connection(2)-192.168.99.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-11-02T22:22:50.456-03:00  INFO 84512 --- [http-nio-auto-1-exec-1] c.p.album.controllers.AlbumController    : Returning 5 albums
+2023-11-02T22:24:24.311-03:00  INFO 84512 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-11-02T22:29:24.326-03:00  INFO 84512 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
