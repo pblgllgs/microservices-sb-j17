@@ -55,7 +55,7 @@ public class UserServiceImpl implements UserService {
         }
         UserDto userDto = mapper.map(userEntity, UserDto.class);
         log.debug("Before calling albums microservice");
-        List<AlbumResponseModel> userAlbums = albumClient.getAlbums(userId);
+        List<AlbumResponseModel> userAlbums = albumClient.findAllAlbums(userId);
         log.debug("After calling albums microservice");
         userDto.setAlbums(userAlbums);
         return userDto;

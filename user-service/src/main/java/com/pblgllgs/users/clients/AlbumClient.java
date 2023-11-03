@@ -16,7 +16,7 @@ public interface AlbumClient {
     @GetMapping("/users/{id}/albums")
     @Retry(name = "albums-ws")
     @CircuitBreaker(name = "albums-ws", fallbackMethod = "getAlbumsFallback")
-    List<AlbumResponseModel> getAlbums(@PathVariable String id);
+    List<AlbumResponseModel> findAllAlbums(@PathVariable String id);
 
     default List<AlbumResponseModel> getAlbumsFallback(String id, Throwable exception){
         System.out.println("Param = " + id);
