@@ -1,0 +1,65 @@
+version: '3.8'
+services:
+  mysql_db_users:
+    container_name: mysql_db_users
+    image: mysql:8.0.32
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    environment:
+      MYSQL_ROOT_USERNAME: root
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: db_users
+    ports:
+      - "3306:3306"
+    expose:
+      - "3306"
+    volumes:
+      - volume_mysql_db_users:/var/lib/mysql
+    healthcheck:
+      test: "/usr/bin/mysql --user=root --password=password --execute \"SHOW DATABASES;\""
+      interval: 2s
+      timeout: 20s
+      retries: 10
+
+  mysql_db_albums:
+    container_name: mysql_db_albums
+    image: mysql:8.0.32
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    environment:
+      MYSQL_ROOT_USERNAME: root
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: db_albums
+    ports:
+      - "3307:3306"
+    expose:
+      - "3307"
+    volumes:
+      - volume_mysql_db_albums:/var/lib/mysql
+    healthcheck:
+      test: "/usr/bin/mysql --user=root --password=password --execute \"SHOW DATABASES;\""
+      interval: 2s
+      timeout: 20s
+      retries: 10
+
+  rabbitmq:
+    image: rabbitmq:3-management-alpine
+    container_name: 'rabbitmq'
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    environment:
+      RABBITMQ_DEFAULT_USER: guest
+      RABBITMQ_DEFAULT_PASS: guest
+
+  zipkin:
+    container_name: zipkin
+    image: openzipkin/zipkin:2.24
+    ports:
+      - "9411:9411"
+
+volumes:
+  volume_mysql_db_users:
+    external: false
+  volume_mysql_db_albums:
+    external: false
