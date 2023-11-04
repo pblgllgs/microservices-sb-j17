@@ -1,0 +1,3 @@
+### refresh properties with spring cloud bus using rabbitmq
+
+POST http://localhost:8888/actuator/busrefresh

@@ -1,0 +1,7 @@
+server:
+  port: ${PORT:0}
+spring:
+  application:
+    name: albums-ws
+  config:
+    import: optional:configserver:http://localhost:8888

@@ -1,31 +1,13 @@
-2023-11-03T00:02:00.461-03:00  INFO 87980 --- [http-nio-auto-1-exec-1] c.p.album.controllers.AlbumController    : Returning 5 albums
-2023-11-03T00:03:05.809-03:00  INFO 87980 --- [http-nio-auto-1-exec-6] c.p.album.controllers.AlbumController    : Returning 5 albums
-2023-11-03T00:04:32.591-03:00  INFO 87980 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2023-11-03T00:09:32.596-03:00  INFO 87980 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2023-11-03T00:13:04.858-03:00  INFO 87980 --- [http-nio-auto-1-exec-4] c.p.album.controllers.AlbumController    : Returning 5 albums
-2023-11-03T00:14:32.610-03:00  INFO 87980 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2023-11-03T00:15:15.124-03:00  INFO 87980 --- [http-nio-auto-1-exec-7] c.p.album.controllers.AlbumController    : Returning 5 albums
-2023-11-03T00:15:18.774-03:00  INFO 87980 --- [http-nio-auto-1-exec-8] c.p.album.controllers.AlbumController    : Returning 5 albums
-2023-11-03T00:15:19.394-03:00  INFO 87980 --- [http-nio-auto-1-exec-9] c.p.album.controllers.AlbumController    : Returning 5 albums
-2023-11-03T00:19:32.613-03:00  INFO 87980 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2023-11-03T00:24:32.622-03:00  INFO 87980 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2023-11-03T00:27:49.421-03:00  INFO 87980 --- [http-nio-auto-1-exec-1] c.p.album.controllers.AlbumController    : Returning 5 albums
-2023-11-03T00:27:51.929-03:00  INFO 87980 --- [http-nio-auto-1-exec-3] c.p.album.controllers.AlbumController    : Returning 5 albums
-2023-11-03T00:28:20.909-03:00  INFO 87980 --- [http-nio-auto-1-exec-6] c.p.album.controllers.AlbumController    : Returning 5 albums
-2023-11-03T00:28:44.328-03:00  INFO 87980 --- [http-nio-auto-1-exec-5] c.p.album.controllers.AlbumController    : Returning 5 albums
-2023-11-03T00:29:32.632-03:00  INFO 87980 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2023-11-03T00:34:32.634-03:00  INFO 87980 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2023-11-03T00:35:19.780-03:00  INFO 87980 --- [http-nio-auto-1-exec-2] c.p.album.controllers.AlbumController    : Returning 5 albums
-2023-11-03T00:36:04.133-03:00  INFO 87980 --- [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application ALBUMS-WS with eureka with status DOWN
-2023-11-03T00:36:04.133-03:00  INFO 87980 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1698982564133, current=DOWN, previous=UP]
-2023-11-03T00:36:04.133-03:00  INFO 87980 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ALBUMS-WS/albums-ws:47edaa6915173798a274910dbb16fc03: registering service...
-2023-11-03T00:36:04.138-03:00  INFO 87980 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ALBUMS-WS/albums-ws:47edaa6915173798a274910dbb16fc03 - registration status: 204
-2023-11-03T00:36:04.157-03:00  INFO 87980 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2023-11-03T00:36:04.160-03:00  INFO 87980 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2023-11-03T00:36:04.174-03:00  INFO 87980 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2023-11-03T00:36:04.175-03:00  INFO 87980 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
-2023-11-03T00:36:07.194-03:00  INFO 87980 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
-2023-11-03T00:36:07.200-03:00  INFO 87980 --- [SpringApplicationShutdownHook] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/} exception=I/O error on DELETE request for "http://localhost:8761/eureka/apps/ALBUMS-WS/albums-ws:47edaa6915173798a274910dbb16fc03": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on DELETE request for "http://localhost:8761/eureka/apps/ALBUMS-WS/albums-ws:47edaa6915173798a274910dbb16fc03": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
+2023-11-04T00:00:20.953-03:00  INFO 13548 --- [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application ALBUMS-WS with eureka with status DOWN
+2023-11-04T00:00:20.955-03:00  INFO 13548 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1699066820955, current=DOWN, previous=UP]
+2023-11-04T00:00:20.955-03:00  INFO 13548 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ALBUMS-WS/albums-ws:6110de3dd9314088b2bf2b2077441b2b: registering service...
+2023-11-04T00:00:20.959-03:00  INFO 13548 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ALBUMS-WS/albums-ws:6110de3dd9314088b2bf2b2077441b2b - registration status: 204
+2023-11-04T00:00:20.976-03:00  INFO 13548 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-11-04T00:00:20.978-03:00  INFO 13548 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-11-04T00:00:21.016-03:00  INFO 13548 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-11-04T00:00:21.017-03:00  INFO 13548 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2023-11-04T00:00:24.024-03:00  INFO 13548 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2023-11-04T00:00:24.029-03:00  INFO 13548 --- [SpringApplicationShutdownHook] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/} exception=I/O error on DELETE request for "http://localhost:8761/eureka/apps/ALBUMS-WS/albums-ws:6110de3dd9314088b2bf2b2077441b2b": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on DELETE request for "http://localhost:8761/eureka/apps/ALBUMS-WS/albums-ws:6110de3dd9314088b2bf2b2077441b2b": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
 	at org.springframework.web.client.RestTemplate.createResourceAccessException(RestTemplate.java:888)
 	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:868)
 	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:764)
@@ -107,8 +89,8 @@ Caused by: org.apache.hc.client5.http.HttpHostConnectException: Connect to http:
 	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:862)
 	... 39 more
 
-2023-11-03T00:36:07.200-03:00  WARN 87980 --- [SpringApplicationShutdownHook] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: I/O error on DELETE request for "http://localhost:8761/eureka/apps/ALBUMS-WS/albums-ws:47edaa6915173798a274910dbb16fc03": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
-2023-11-03T00:36:07.204-03:00  INFO 87980 --- [SpringApplicationShutdownHook] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}, exception=I/O error on DELETE request for "http://localhost:8761/eureka/apps/ALBUMS-WS/albums-ws:47edaa6915173798a274910dbb16fc03": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on DELETE request for "http://localhost:8761/eureka/apps/ALBUMS-WS/albums-ws:47edaa6915173798a274910dbb16fc03": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
+2023-11-04T00:00:24.030-03:00  WARN 13548 --- [SpringApplicationShutdownHook] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: I/O error on DELETE request for "http://localhost:8761/eureka/apps/ALBUMS-WS/albums-ws:6110de3dd9314088b2bf2b2077441b2b": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
+2023-11-04T00:00:24.035-03:00  INFO 13548 --- [SpringApplicationShutdownHook] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}, exception=I/O error on DELETE request for "http://localhost:8761/eureka/apps/ALBUMS-WS/albums-ws:6110de3dd9314088b2bf2b2077441b2b": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on DELETE request for "http://localhost:8761/eureka/apps/ALBUMS-WS/albums-ws:6110de3dd9314088b2bf2b2077441b2b": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
 	at org.springframework.web.client.RestTemplate.createResourceAccessException(RestTemplate.java:888)
 	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:868)
 	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:764)
@@ -191,8 +173,8 @@ Caused by: org.apache.hc.client5.http.HttpHostConnectException: Connect to http:
 	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:862)
 	... 40 more
 
-2023-11-03T00:36:07.204-03:00  WARN 87980 --- [SpringApplicationShutdownHook] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: I/O error on DELETE request for "http://localhost:8761/eureka/apps/ALBUMS-WS/albums-ws:47edaa6915173798a274910dbb16fc03": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
-2023-11-03T00:36:07.205-03:00 ERROR 87980 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ALBUMS-WS/albums-ws:47edaa6915173798a274910dbb16fc03 - de-registration failedCannot execute request on any known server
+2023-11-04T00:00:24.035-03:00  WARN 13548 --- [SpringApplicationShutdownHook] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: I/O error on DELETE request for "http://localhost:8761/eureka/apps/ALBUMS-WS/albums-ws:6110de3dd9314088b2bf2b2077441b2b": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
+2023-11-04T00:00:24.035-03:00 ERROR 13548 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ALBUMS-WS/albums-ws:6110de3dd9314088b2bf2b2077441b2b - de-registration failedCannot execute request on any known server
 
 com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
 	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-2.0.1.jar:2.0.1]
@@ -228,195 +210,4 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 	at org.springframework.boot.SpringApplicationShutdownHook.run(SpringApplicationShutdownHook.java:114) ~[spring-boot-3.1.5.jar:3.1.5]
 	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
 
-2023-11-03T00:36:07.240-03:00  INFO 87980 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
-2023-11-03T11:53:07.038-03:00  INFO 25588 --- [main] c.p.album.AlbumServiceApplication        : Starting AlbumServiceApplication using Java 17.0.2 with PID 25588 (E:\Spring\microservices\microservice-j17-sb3\album-service\target\classes started by pblgl in E:\Spring\microservices\microservice-j17-sb3)
-2023-11-03T11:53:07.040-03:00  INFO 25588 --- [main] c.p.album.AlbumServiceApplication        : No active profile set, falling back to 1 default profile: "default"
-2023-11-03T11:53:07.069-03:00  INFO 25588 --- [main] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:8888
-2023-11-03T11:53:07.069-03:00  INFO 25588 --- [main] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=albums-ws, profiles=[default], label=null, version=75bf2bd7e3773ce49314cd0afb853f6bdbd3a574, state=null
-2023-11-03T11:53:07.619-03:00  INFO 25588 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-11-03T11:53:07.713-03:00  INFO 25588 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 88 ms. Found 1 JPA repository interfaces.
-2023-11-03T11:53:07.842-03:00  INFO 25588 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=38b0423a-5d90-3fa0-bee5-557917123b81
-2023-11-03T11:53:08.105-03:00  INFO 25588 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
-2023-11-03T11:53:08.111-03:00  INFO 25588 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-11-03T11:53:08.112-03:00  INFO 25588 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.15]
-2023-11-03T11:53:08.180-03:00  INFO 25588 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-11-03T11:53:08.180-03:00  INFO 25588 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1109 ms
-2023-11-03T11:53:08.369-03:00  INFO 25588 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-11-03T11:53:08.420-03:00  INFO 25588 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.13.Final
-2023-11-03T11:53:08.422-03:00  INFO 25588 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
-2023-11-03T11:53:08.664-03:00  INFO 25588 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2023-11-03T11:53:08.686-03:00  INFO 25588 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2023-11-03T11:53:08.890-03:00  INFO 25588 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1fa796a4
-2023-11-03T11:53:08.891-03:00  INFO 25588 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2023-11-03T11:53:08.931-03:00  WARN 25588 --- [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2023-11-03T11:53:09.555-03:00  INFO 25588 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2023-11-03T11:53:09.622-03:00  INFO 25588 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-11-03T11:53:09.846-03:00  WARN 25588 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-11-03T11:53:11.202-03:00  INFO 25588 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
-2023-11-03T11:53:12.535-03:00  INFO 25588 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
-2023-11-03T11:53:12.540-03:00  INFO 25588 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
-2023-11-03T11:53:12.562-03:00  WARN 25588 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
-2023-11-03T11:53:12.565-03:00  INFO 25588 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
-2023-11-03T11:53:12.625-03:00  INFO 25588 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 55303 (http) with context path ''
-2023-11-03T11:53:12.626-03:00  INFO 25588 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 55303
-2023-11-03T11:53:12.629-03:00  INFO 25588 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
-2023-11-03T11:53:12.661-03:00  INFO 25588 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
-2023-11-03T11:53:12.664-03:00  INFO 25588 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2023-11-03T11:53:12.682-03:00  INFO 25588 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
-2023-11-03T11:53:12.682-03:00  INFO 25588 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
-2023-11-03T11:53:12.683-03:00  INFO 25588 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
-2023-11-03T11:53:12.683-03:00  INFO 25588 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
-2023-11-03T11:53:12.683-03:00  INFO 25588 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
-2023-11-03T11:53:12.683-03:00  INFO 25588 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
-2023-11-03T11:53:12.683-03:00  INFO 25588 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
-2023-11-03T11:53:12.818-03:00  INFO 25588 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
-2023-11-03T11:53:12.822-03:00  INFO 25588 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
-2023-11-03T11:53:12.826-03:00  INFO 25588 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
-2023-11-03T11:53:12.833-03:00  INFO 25588 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1699023192833 with initial instances count: 0
-2023-11-03T11:53:12.835-03:00  INFO 25588 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application ALBUMS-WS with eureka with status UP
-2023-11-03T11:53:12.835-03:00  INFO 25588 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1699023192835, current=UP, previous=STARTING]
-2023-11-03T11:53:12.836-03:00  INFO 25588 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ALBUMS-WS/albums-ws:2a9f669a1bd3e319aeede2618ca7388f: registering service...
-2023-11-03T11:53:12.861-03:00  INFO 25588 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ALBUMS-WS/albums-ws:2a9f669a1bd3e319aeede2618ca7388f - registration status: 204
-2023-11-03T11:53:14.000-03:00  INFO 25588 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
-2023-11-03T11:53:14.011-03:00  INFO 25588 --- [main] c.p.album.AlbumServiceApplication        : Started AlbumServiceApplication in 9.98 seconds (process running for 10.87)
-2023-11-03T11:53:14.531-03:00  INFO 25588 --- [RMI TCP Connection(3)-192.168.99.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-11-03T11:53:14.532-03:00  INFO 25588 --- [RMI TCP Connection(3)-192.168.99.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2023-11-03T11:53:14.533-03:00  INFO 25588 --- [RMI TCP Connection(3)-192.168.99.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2023-11-03T11:53:42.826-03:00  INFO 25588 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
-2023-11-03T11:53:42.826-03:00  INFO 25588 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
-2023-11-03T11:53:42.826-03:00  INFO 25588 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
-2023-11-03T11:53:42.826-03:00  INFO 25588 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
-2023-11-03T11:53:42.826-03:00  INFO 25588 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
-2023-11-03T11:53:42.826-03:00  INFO 25588 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
-2023-11-03T11:53:42.827-03:00  INFO 25588 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
-2023-11-03T11:53:42.833-03:00  INFO 25588 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
-2023-11-03T11:55:15.081-03:00  INFO 25588 --- [http-nio-auto-1-exec-7] c.p.album.controllers.AlbumController    : Returning 5 albums
-2023-11-03T11:58:12.687-03:00  INFO 25588 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2023-11-03T11:59:07.908-03:00  INFO 25588 --- [http-nio-auto-1-exec-5] c.p.album.controllers.AlbumController    : Returning 5 albums
-2023-11-03T12:03:12.702-03:00  INFO 25588 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2023-11-03T12:08:12.710-03:00  INFO 25588 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2023-11-03T12:13:12.718-03:00  INFO 25588 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2023-11-03T12:18:12.727-03:00  INFO 25588 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2023-11-03T12:23:12.738-03:00  INFO 25588 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2023-11-03T12:28:12.748-03:00  INFO 25588 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2023-11-03T12:30:38.508-03:00  INFO 25588 --- [http-nio-auto-1-exec-3] c.p.album.controllers.AlbumController    : Returning 5 albums
-2023-11-03T12:33:12.750-03:00  INFO 25588 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2023-11-03T12:38:12.762-03:00  INFO 25588 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2023-11-03T12:43:12.773-03:00  INFO 25588 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2023-11-03T12:48:12.778-03:00  INFO 25588 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2023-11-03T12:48:52.307-03:00  INFO 25588 --- [http-nio-auto-1-exec-8] c.p.album.controllers.AlbumController    : Returning 5 albums
-2023-11-03T12:50:06.082-03:00  INFO 25588 --- [http-nio-auto-1-exec-2] c.p.album.controllers.AlbumController    : Returning 5 albums
-2023-11-03T12:51:18.777-03:00  INFO 25588 --- [http-nio-auto-1-exec-9] c.p.album.controllers.AlbumController    : Returning 5 albums
-2023-11-03T12:53:12.788-03:00  INFO 25588 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2023-11-03T12:57:05.428-03:00  INFO 25588 --- [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application ALBUMS-WS with eureka with status DOWN
-2023-11-03T12:57:05.428-03:00  INFO 25588 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1699027025428, current=DOWN, previous=UP]
-2023-11-03T12:57:05.428-03:00  INFO 25588 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ALBUMS-WS/albums-ws:2a9f669a1bd3e319aeede2618ca7388f: registering service...
-2023-11-03T12:57:05.436-03:00  INFO 25588 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ALBUMS-WS/albums-ws:2a9f669a1bd3e319aeede2618ca7388f - registration status: 204
-2023-11-03T12:57:05.474-03:00  INFO 25588 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2023-11-03T12:57:05.481-03:00  INFO 25588 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2023-11-03T12:57:05.490-03:00  INFO 25588 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2023-11-03T12:57:05.491-03:00  INFO 25588 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
-2023-11-03T12:57:08.514-03:00  INFO 25588 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
-2023-11-03T12:57:08.519-03:00  INFO 25588 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ALBUMS-WS/albums-ws:2a9f669a1bd3e319aeede2618ca7388f - deregister  status: 200
-2023-11-03T12:57:08.553-03:00  INFO 25588 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
-2023-11-03T12:57:13.637-03:00  INFO 29928 --- [main] c.p.album.AlbumServiceApplication        : Starting AlbumServiceApplication using Java 17.0.2 with PID 29928 (E:\Spring\microservices\microservice-j17-sb3\album-service\target\classes started by pblgl in E:\Spring\microservices\microservice-j17-sb3)
-2023-11-03T12:57:13.639-03:00  INFO 29928 --- [main] c.p.album.AlbumServiceApplication        : No active profile set, falling back to 1 default profile: "default"
-2023-11-03T12:57:13.662-03:00  INFO 29928 --- [main] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:8888
-2023-11-03T12:57:13.662-03:00  INFO 29928 --- [main] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=albums-ws, profiles=[default], label=null, version=0ed595d364194d8ab14033d5e131d0033d131626, state=null
-2023-11-03T12:57:14.168-03:00  INFO 29928 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-11-03T12:57:14.258-03:00  INFO 29928 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 85 ms. Found 1 JPA repository interfaces.
-2023-11-03T12:57:14.381-03:00  INFO 29928 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=38b0423a-5d90-3fa0-bee5-557917123b81
-2023-11-03T12:57:14.626-03:00  INFO 29928 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
-2023-11-03T12:57:14.633-03:00  INFO 29928 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-11-03T12:57:14.633-03:00  INFO 29928 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.15]
-2023-11-03T12:57:14.721-03:00  INFO 29928 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-11-03T12:57:14.721-03:00  INFO 29928 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1058 ms
-2023-11-03T12:57:14.903-03:00  INFO 29928 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-11-03T12:57:14.952-03:00  INFO 29928 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.13.Final
-2023-11-03T12:57:14.954-03:00  INFO 29928 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
-2023-11-03T12:57:15.172-03:00  INFO 29928 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2023-11-03T12:57:15.194-03:00  INFO 29928 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2023-11-03T12:57:15.460-03:00  INFO 29928 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@73c09a98
-2023-11-03T12:57:15.461-03:00  INFO 29928 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2023-11-03T12:57:15.506-03:00  WARN 29928 --- [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2023-11-03T12:57:16.243-03:00  INFO 29928 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2023-11-03T12:57:16.315-03:00  INFO 29928 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-11-03T12:57:16.548-03:00  WARN 29928 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-11-03T12:57:17.892-03:00  INFO 29928 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
-2023-11-03T12:57:19.230-03:00  INFO 29928 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
-2023-11-03T12:57:19.235-03:00  INFO 29928 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
-2023-11-03T12:57:19.257-03:00  WARN 29928 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
-2023-11-03T12:57:19.261-03:00  INFO 29928 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
-2023-11-03T12:57:19.323-03:00  INFO 29928 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 59420 (http) with context path ''
-2023-11-03T12:57:19.324-03:00  INFO 29928 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 59420
-2023-11-03T12:57:19.326-03:00  INFO 29928 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
-2023-11-03T12:57:19.361-03:00  INFO 29928 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
-2023-11-03T12:57:19.364-03:00  INFO 29928 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2023-11-03T12:57:19.382-03:00  INFO 29928 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
-2023-11-03T12:57:19.382-03:00  INFO 29928 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
-2023-11-03T12:57:19.382-03:00  INFO 29928 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
-2023-11-03T12:57:19.382-03:00  INFO 29928 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
-2023-11-03T12:57:19.383-03:00  INFO 29928 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
-2023-11-03T12:57:19.383-03:00  INFO 29928 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
-2023-11-03T12:57:19.383-03:00  INFO 29928 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
-2023-11-03T12:57:19.529-03:00  INFO 29928 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
-2023-11-03T12:57:19.534-03:00  INFO 29928 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
-2023-11-03T12:57:19.538-03:00  INFO 29928 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
-2023-11-03T12:57:19.547-03:00  INFO 29928 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1699027039546 with initial instances count: 4
-2023-11-03T12:57:19.548-03:00  INFO 29928 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application ALBUMS-WS with eureka with status UP
-2023-11-03T12:57:19.549-03:00  INFO 29928 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1699027039549, current=UP, previous=STARTING]
-2023-11-03T12:57:19.550-03:00  INFO 29928 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ALBUMS-WS/albums-ws:5054fc20581598f00b54ba0bf9d907da: registering service...
-2023-11-03T12:57:19.575-03:00  INFO 29928 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ALBUMS-WS/albums-ws:5054fc20581598f00b54ba0bf9d907da - registration status: 204
-2023-11-03T12:57:20.712-03:00  INFO 29928 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
-2023-11-03T12:57:20.723-03:00  INFO 29928 --- [main] c.p.album.AlbumServiceApplication        : Started AlbumServiceApplication in 10.681 seconds (process running for 11.141)
-2023-11-03T12:57:21.005-03:00  INFO 29928 --- [RMI TCP Connection(2)-192.168.99.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-11-03T12:57:21.006-03:00  INFO 29928 --- [RMI TCP Connection(2)-192.168.99.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2023-11-03T12:57:21.007-03:00  INFO 29928 --- [RMI TCP Connection(2)-192.168.99.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2023-11-03T12:58:06.404-03:00  INFO 29928 --- [http-nio-auto-1-exec-1] c.p.album.controllers.AlbumController    : Returning 5 albums
-2023-11-03T12:58:25.571-03:00  INFO 29928 --- [http-nio-auto-1-exec-4] c.p.album.controllers.AlbumController    : Returning 5 albums
-2023-11-03T13:02:19.387-03:00  INFO 29928 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2023-11-03T13:05:16.027-03:00  INFO 29928 --- [http-nio-auto-1-exec-2] c.p.album.controllers.AlbumController    : Returning 5 albums
-2023-11-03T13:07:19.396-03:00  INFO 29928 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2023-11-03T13:12:19.407-03:00  INFO 29928 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2023-11-03T13:14:23.136-03:00  INFO 29928 --- [http-nio-auto-1-exec-5] c.p.album.controllers.AlbumController    : Returning 5 albums
-2023-11-03T13:17:19.422-03:00  INFO 29928 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2023-11-03T13:21:45.071-03:00  INFO 29928 --- [http-nio-auto-1-exec-8] c.p.album.controllers.AlbumController    : Returning 5 albums
-2023-11-03T13:22:19.423-03:00  INFO 29928 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2023-11-03T13:27:19.433-03:00  INFO 29928 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2023-11-03T13:32:19.448-03:00  INFO 29928 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2023-11-03T13:37:19.458-03:00  INFO 29928 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2023-11-03T13:39:42.783-03:00  INFO 29928 --- [http-nio-auto-1-exec-10] c.p.album.controllers.AlbumController    : Returning 5 albums
-2023-11-03T13:40:55.161-03:00  INFO 29928 --- [http-nio-auto-1-exec-4] c.p.album.controllers.AlbumController    : Returning 5 albums
-2023-11-03T13:41:07.480-03:00  INFO 29928 --- [http-nio-auto-1-exec-7] c.p.album.controllers.AlbumController    : Returning 5 albums
-2023-11-03T13:42:19.470-03:00  INFO 29928 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2023-11-03T13:43:52.026-03:00  INFO 29928 --- [http-nio-auto-1-exec-6] c.p.album.controllers.AlbumController    : Returning 5 albums
-2023-11-03T13:47:19.475-03:00  INFO 29928 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2023-11-03T13:52:19.481-03:00  INFO 29928 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2023-11-03T13:57:19.489-03:00  INFO 29928 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2023-11-03T14:02:19.493-03:00  INFO 29928 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2023-11-03T14:02:53.858-03:00  INFO 29928 --- [http-nio-auto-1-exec-3] c.p.album.controllers.AlbumController    : Returning 5 albums
-2023-11-03T14:07:19.507-03:00  INFO 29928 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2023-11-03T14:12:19.517-03:00  INFO 29928 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2023-11-03T14:17:19.523-03:00  INFO 29928 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2023-11-03T14:18:43.598-03:00  INFO 29928 --- [http-nio-auto-1-exec-9] c.p.album.controllers.AlbumController    : Returning 5 albums
-2023-11-03T14:18:51.137-03:00  INFO 29928 --- [http-nio-auto-1-exec-10] c.p.album.controllers.AlbumController    : Returning 5 albums
-2023-11-03T14:22:19.527-03:00  INFO 29928 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2023-11-03T14:24:50.508-03:00  INFO 29928 --- [http-nio-auto-1-exec-4] c.p.album.controllers.AlbumController    : Returning 5 albums
-2023-11-03T14:27:19.535-03:00  INFO 29928 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2023-11-03T14:32:19.542-03:00  INFO 29928 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2023-11-03T14:37:19.551-03:00  INFO 29928 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2023-11-03T14:42:19.558-03:00  INFO 29928 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2023-11-03T14:47:19.564-03:00  INFO 29928 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2023-11-03T14:52:19.576-03:00  INFO 29928 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2023-11-03T14:57:19.591-03:00  INFO 29928 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2023-11-03T15:02:19.603-03:00  INFO 29928 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2023-11-03T15:04:02.178-03:00  INFO 29928 --- [http-nio-auto-1-exec-2] c.p.album.controllers.AlbumController    : Returning 5 albums
-2023-11-03T15:07:19.609-03:00  INFO 29928 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2023-11-03T15:07:29.823-03:00  INFO 29928 --- [http-nio-auto-1-exec-5] c.p.album.controllers.AlbumController    : Returning 5 albums
-2023-11-03T15:12:19.610-03:00  INFO 29928 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2023-11-03T15:17:19.613-03:00  INFO 29928 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2023-11-03T15:22:19.631-03:00  INFO 29928 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2023-11-03T15:27:19.644-03:00  INFO 29928 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2023-11-03T15:28:30.929-03:00  INFO 29928 --- [http-nio-auto-1-exec-8] c.p.album.controllers.AlbumController    : Returning 5 albums
-2023-11-03T15:29:10.556-03:00  INFO 29928 --- [http-nio-auto-1-exec-9] c.p.album.controllers.AlbumController    : Returning 5 albums
-2023-11-03T15:32:19.657-03:00  INFO 29928 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-11-04T00:00:24.069-03:00  INFO 13548 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient

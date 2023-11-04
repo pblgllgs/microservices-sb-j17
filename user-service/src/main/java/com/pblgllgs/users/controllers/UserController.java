@@ -28,7 +28,10 @@ public class UserController {
 
     @GetMapping("/status/check")
     public String status() {
-        return "Users Status UP on " + applicationContext.getWebServer().getPort()+" and "+ environment.getProperty("token.secret");
+        return "Users Status UP on port: " +
+                applicationContext.getWebServer().getPort()+" and "+
+                environment.getProperty("token.secret")+ " in the "+
+                environment.getProperty("message.profile") + " environment";
     }
 
     @PostMapping
