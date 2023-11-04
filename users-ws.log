@@ -218,3 +218,350 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
 
 2023-11-04T00:00:26.787-03:00  INFO [users-ws, , ] 39568 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2023-11-04T14:03:19.177-03:00  INFO [users-ws, , ] 25700 --- [main] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:8888
+2023-11-04T14:03:19.178-03:00  INFO [users-ws, , ] 25700 --- [main] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=users-ws, profiles=[default], label=null, version=249d25acbbf66de630ee5fdb6f65974b59842f73, state=null
+2023-11-04T14:03:19.178-03:00  INFO [users-ws, , ] 25700 --- [main] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:8888
+2023-11-04T14:03:19.178-03:00  INFO [users-ws, , ] 25700 --- [main] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=users-ws, profiles=[prod], label=null, version=249d25acbbf66de630ee5fdb6f65974b59842f73, state=null
+2023-11-04T14:03:23.065-03:00  INFO [users-ws, , ] 25700 --- [main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:8888
+2023-11-04T14:03:24.255-03:00  INFO [users-ws, , ] 25700 --- [main] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=users-ws, profiles=[default,prod], label=null, version=249d25acbbf66de630ee5fdb6f65974b59842f73, state=null
+2023-11-04T14:03:24.256-03:00  INFO [users-ws, , ] 25700 --- [main] b.c.PropertySourceBootstrapConfiguration : Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/pblgllgs/config-server-j17-sb3.git/users-ws-prod.yml'}]
+2023-11-04T14:03:24.270-03:00  INFO [users-ws, , ] 25700 --- [main] c.pblgllgs.users.UserServiceApplication  : The following 1 profile is active: "prod"
+2023-11-04T14:03:24.279-03:00  INFO [users-ws, , ] 25700 --- [main] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:8888
+2023-11-04T14:03:24.279-03:00  INFO [users-ws, , ] 25700 --- [main] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=users-ws, profiles=[default], label=null, version=249d25acbbf66de630ee5fdb6f65974b59842f73, state=null
+2023-11-04T14:03:24.279-03:00  INFO [users-ws, , ] 25700 --- [main] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:8888
+2023-11-04T14:03:24.279-03:00  INFO [users-ws, , ] 25700 --- [main] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=users-ws, profiles=[prod], label=null, version=249d25acbbf66de630ee5fdb6f65974b59842f73, state=null
+2023-11-04T14:03:25.067-03:00  INFO [users-ws, , ] 25700 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-11-04T14:03:25.166-03:00  INFO [users-ws, , ] 25700 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 93 ms. Found 1 JPA repository interfaces.
+2023-11-04T14:03:25.335-03:00  INFO [users-ws, , ] 25700 --- [main] faultConfiguringBeanFactoryPostProcessor : No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2023-11-04T14:03:25.341-03:00  INFO [users-ws, , ] 25700 --- [main] faultConfiguringBeanFactoryPostProcessor : No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2023-11-04T14:03:25.485-03:00  INFO [users-ws, , ] 25700 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=f663067e-177e-3d36-89d1-9ea78ba5304e
+2023-11-04T14:03:25.537-03:00  INFO [users-ws, , ] 25700 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.pblgllgs.users.clients.AlbumClient' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-11-04T14:03:25.748-03:00  INFO [users-ws, , ] 25700 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.integration.IntegrationAutoConfiguration$IntegrationJmxConfiguration' of type [org.springframework.boot.autoconfigure.integration.IntegrationAutoConfiguration$IntegrationJmxConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-11-04T14:03:25.755-03:00  INFO [users-ws, , ] 25700 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.stream.config.BindersHealthIndicatorAutoConfiguration' of type [org.springframework.cloud.stream.config.BindersHealthIndicatorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-11-04T14:03:25.758-03:00  INFO [users-ws, , ] 25700 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'bindersHealthContributor' of type [org.springframework.cloud.stream.config.BindersHealthIndicatorAutoConfiguration$BindersHealthContributor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-11-04T14:03:25.763-03:00  INFO [users-ws, , ] 25700 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'bindersHealthIndicatorListener' of type [org.springframework.cloud.stream.config.BindersHealthIndicatorAutoConfiguration$BindersHealthIndicatorListener] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-11-04T14:03:25.769-03:00  INFO [users-ws, , ] 25700 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.stream.binder.rabbit.config.ExtendedBindingHandlerMappingsProviderConfiguration' of type [org.springframework.cloud.stream.binder.rabbit.config.ExtendedBindingHandlerMappingsProviderConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-11-04T14:03:25.771-03:00  INFO [users-ws, , ] 25700 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'rabbitExtendedPropertiesDefaultMappingsProvider' of type [org.springframework.cloud.stream.binder.rabbit.config.ExtendedBindingHandlerMappingsProviderConfiguration$$Lambda$763/0x00000008011adff8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-11-04T14:03:25.774-03:00  INFO [users-ws, , ] 25700 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'BindingHandlerAdvise' of type [org.springframework.cloud.stream.config.BindingHandlerAdvise] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-11-04T14:03:25.775-03:00  INFO [users-ws, , ] 25700 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration' of type [org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-11-04T14:03:25.778-03:00  INFO [users-ws, , ] 25700 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-11-04T14:03:25.780-03:00  INFO [users-ws, , ] 25700 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'loadBalancerClientsDefaultsMappingsProvider' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration$$Lambda$764/0x00000008011ae210] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-11-04T14:03:25.782-03:00  INFO [users-ws, , ] 25700 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'defaultsBindHandlerAdvisor' of type [org.springframework.cloud.commons.config.DefaultsBindHandlerAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-11-04T14:03:25.791-03:00  INFO [users-ws, , ] 25700 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'spelConverter' of type [org.springframework.cloud.stream.config.SpelExpressionConverterConfiguration$SpelConverter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-11-04T14:03:25.796-03:00  INFO [users-ws, , ] 25700 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.jmx-org.springframework.boot.autoconfigure.jmx.JmxProperties' of type [org.springframework.boot.autoconfigure.jmx.JmxProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-11-04T14:03:25.802-03:00  INFO [users-ws, , ] 25700 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration' of type [org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-11-04T14:03:25.806-03:00  INFO [users-ws, , ] 25700 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'mbeanServer' of type [com.sun.jmx.mbeanserver.JmxMBeanServer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-11-04T14:03:25.847-03:00  INFO [users-ws, , ] 25700 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-11-04T14:03:25.849-03:00  INFO [users-ws, , ] 25700 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-11-04T14:03:25.851-03:00  INFO [users-ws, , ] 25700 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-11-04T14:03:26.094-03:00  INFO [users-ws, , ] 25700 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2023-11-04T14:03:26.101-03:00  INFO [users-ws, , ] 25700 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-11-04T14:03:26.101-03:00  INFO [users-ws, , ] 25700 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.15]
+2023-11-04T14:03:26.178-03:00  INFO [users-ws, , ] 25700 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-11-04T14:03:26.178-03:00  INFO [users-ws, , ] 25700 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1898 ms
+2023-11-04T14:03:26.781-03:00  INFO [users-ws, , ] 25700 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-11-04T14:03:26.821-03:00  INFO [users-ws, , ] 25700 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.13.Final
+2023-11-04T14:03:26.822-03:00  INFO [users-ws, , ] 25700 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-11-04T14:03:27.012-03:00  INFO [users-ws, , ] 25700 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-11-04T14:03:27.031-03:00  INFO [users-ws, , ] 25700 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-11-04T14:03:27.242-03:00  INFO [users-ws, , ] 25700 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7388d94d
+2023-11-04T14:03:27.244-03:00  INFO [users-ws, , ] 25700 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-11-04T14:03:27.296-03:00  WARN [users-ws, , ] 25700 --- [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2023-11-04T14:03:27.948-03:00  INFO [users-ws, , ] 25700 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2023-11-04T14:03:28.003-03:00  INFO [users-ws, , ] 25700 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-11-04T14:03:28.376-03:00  WARN [users-ws, , ] 25700 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-11-04T14:03:28.626-03:00  INFO [users-ws, , ] 25700 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'albums-ws' URL not provided. Will try picking an instance via load-balancing.
+2023-11-04T14:03:30.465-03:00  INFO [users-ws, , ] 25700 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-11-04T14:03:31.679-03:00  INFO [users-ws, , ] 25700 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-11-04T14:03:32.026-03:00  INFO [users-ws, , ] 25700 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 33 endpoint(s) beneath base path '/actuator'
+2023-11-04T14:03:32.080-03:00  INFO [users-ws, , ] 25700 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1b28684, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@694b818f, org.springframework.security.web.context.SecurityContextHolderFilter@4e081ec7, org.springframework.security.web.header.HeaderWriterFilter@5672c056, org.springframework.security.web.authentication.logout.LogoutFilter@7ac66113, com.pblgllgs.users.security.filters.AuthenticationFilter@63cb1a9a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@33d74ebd, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@591e5480, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@37cb41fa, org.springframework.security.web.session.SessionManagementFilter@248cc861, org.springframework.security.web.access.ExceptionTranslationFilter@7c03a3f5, org.springframework.security.web.access.intercept.AuthorizationFilter@787aa9f1]
+2023-11-04T14:03:32.430-03:00  INFO [users-ws, , ] 25700 --- [main] o.s.c.s.m.DirectWithAttributesChannel    : Channel 'users-ws-1.springCloudBusInput' has 1 subscriber(s).
+2023-11-04T14:03:32.713-03:00  INFO [users-ws, , ] 25700 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2023-11-04T14:03:33.896-03:00  INFO [users-ws, , ] 25700 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-11-04T14:03:33.955-03:00  WARN [users-ws, , ] 25700 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-11-04T14:03:34.095-03:00  WARN [users-ws, , ] 25700 --- [main] ocalVariableTableParameterNameDiscoverer : Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: org.springframework.amqp.rabbit.core.RabbitAdmin
+2023-11-04T14:03:34.119-03:00  INFO [users-ws, , ] 25700 --- [main] o.s.i.monitor.IntegrationMBeanExporter   : Registering MessageChannel errorChannel
+2023-11-04T14:03:34.124-03:00  INFO [users-ws, , ] 25700 --- [main] o.s.i.monitor.IntegrationMBeanExporter   : Registering MessageChannel springCloudBusInput
+2023-11-04T14:03:34.128-03:00  INFO [users-ws, , ] 25700 --- [main] o.s.i.monitor.IntegrationMBeanExporter   : Registering MessageChannel nullChannel
+2023-11-04T14:03:34.137-03:00  INFO [users-ws, , ] 25700 --- [main] o.s.i.monitor.IntegrationMBeanExporter   : Registering MessageHandler _org.springframework.integration.errorLogger
+2023-11-04T14:03:34.147-03:00  INFO [users-ws, , ] 25700 --- [main] o.s.i.endpoint.EventDrivenConsumer       : Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2023-11-04T14:03:34.147-03:00  INFO [users-ws, , ] 25700 --- [main] o.s.i.channel.PublishSubscribeChannel    : Channel 'users-ws-1.errorChannel' has 1 subscriber(s).
+2023-11-04T14:03:34.147-03:00  INFO [users-ws, , ] 25700 --- [main] o.s.i.endpoint.EventDrivenConsumer       : started bean '_org.springframework.integration.errorLogger'
+2023-11-04T14:03:34.169-03:00  INFO [users-ws, , ] 25700 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 63371 (http) with context path ''
+2023-11-04T14:03:34.170-03:00  INFO [users-ws, , ] 25700 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 63371
+2023-11-04T14:03:34.174-03:00  INFO [users-ws, , ] 25700 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2023-11-04T14:03:34.212-03:00  INFO [users-ws, , ] 25700 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2023-11-04T14:03:34.218-03:00  INFO [users-ws, , ] 25700 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-11-04T14:03:34.246-03:00  INFO [users-ws, , ] 25700 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2023-11-04T14:03:34.246-03:00  INFO [users-ws, , ] 25700 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2023-11-04T14:03:34.246-03:00  INFO [users-ws, , ] 25700 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2023-11-04T14:03:34.246-03:00  INFO [users-ws, , ] 25700 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2023-11-04T14:03:34.246-03:00  INFO [users-ws, , ] 25700 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2023-11-04T14:03:34.246-03:00  INFO [users-ws, , ] 25700 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2023-11-04T14:03:34.246-03:00  INFO [users-ws, , ] 25700 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2023-11-04T14:03:34.373-03:00  INFO [users-ws, , ] 25700 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2023-11-04T14:03:34.378-03:00  INFO [users-ws, , ] 25700 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2023-11-04T14:03:34.382-03:00  INFO [users-ws, , ] 25700 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2023-11-04T14:03:34.389-03:00  INFO [users-ws, , ] 25700 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1699117414389 with initial instances count: 3
+2023-11-04T14:03:34.400-03:00  INFO [users-ws, , ] 25700 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application USERS-WS with eureka with status UP
+2023-11-04T14:03:34.400-03:00  INFO [users-ws, , ] 25700 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1699117414400, current=UP, previous=STARTING]
+2023-11-04T14:03:34.401-03:00  INFO [users-ws, , ] 25700 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USERS-WS/users-ws:125c56bb-ed33-4d27-9075-93f20ee34354: registering service...
+2023-11-04T14:03:34.430-03:00  INFO [users-ws, , ] 25700 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USERS-WS/users-ws:125c56bb-ed33-4d27-9075-93f20ee34354 - registration status: 204
+2023-11-04T14:03:35.562-03:00  INFO [users-ws, , ] 25700 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-11-04T14:03:36.718-03:00  INFO [users-ws, , ] 25700 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-11-04T14:03:36.719-03:00  INFO [users-ws, , ] 25700 --- [main] o.s.c.s.binder.DefaultBinderFactory      : Creating binder: rabbit
+2023-11-04T14:03:36.719-03:00  INFO [users-ws, , ] 25700 --- [main] o.s.c.s.binder.DefaultBinderFactory      : Constructing binder child context for rabbit
+2023-11-04T14:03:36.764-03:00  INFO [users-ws, , ] 25700 --- [main] o.s.c.s.binder.DefaultBinderFactory      : Caching the binder: rabbit
+2023-11-04T14:03:36.819-03:00  INFO [users-ws, , ] 25700 --- [main] c.s.b.r.p.RabbitExchangeQueueProvisioner : declaring queue for inbound: springCloudBus.anonymous.an6TPMSSSnitaQvXcu0DnA, bound to: springCloudBus
+2023-11-04T14:03:36.823-03:00  INFO [users-ws, , ] 25700 --- [main] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2023-11-04T14:03:36.855-03:00  INFO [users-ws, , ] 25700 --- [main] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#3eb999b2:0/SimpleConnection@38a785f6 [delegate=amqp://guest@127.0.0.1:5672/, localPort=63374]
+2023-11-04T14:03:36.892-03:00  INFO [users-ws, , ] 25700 --- [main] o.s.c.stream.binder.BinderErrorChannel   : Channel 'rabbit-1645383825.springCloudBusInput.errors' has 1 subscriber(s).
+2023-11-04T14:03:36.893-03:00  INFO [users-ws, , ] 25700 --- [main] o.s.c.stream.binder.BinderErrorChannel   : Channel 'rabbit-1645383825.springCloudBusInput.errors' has 2 subscriber(s).
+2023-11-04T14:03:36.907-03:00  INFO [users-ws, , ] 25700 --- [main] o.s.i.a.i.AmqpInboundChannelAdapter      : started bean 'inbound.springCloudBus.anonymous.an6TPMSSSnitaQvXcu0DnA'
+2023-11-04T14:03:36.929-03:00  INFO [users-ws, , ] 25700 --- [main] o.s.i.monitor.IntegrationMBeanExporter   : Registering MessageChannel rabbit-1645383825.springCloudBusInput.errors
+2023-11-04T14:03:36.942-03:00  INFO [users-ws, , ] 25700 --- [main] c.pblgllgs.users.UserServiceApplication  : Started UserServiceApplication in 22.21 seconds (process running for 24.062)
+2023-11-04T14:04:58.222-03:00  INFO [users-ws, , ] 25700 --- [http-nio-auto-1-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-04T14:04:58.222-03:00  INFO [users-ws, , ] 25700 --- [http-nio-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-11-04T14:04:58.225-03:00  INFO [users-ws, , ] 25700 --- [http-nio-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2023-11-04T14:05:09.049-03:00 DEBUG [users-ws, 654679c5284e7d785477a0c07723ef8e, 95397ff28c13aa43] 25700 --- [http-nio-auto-1-exec-2] c.p.users.services.impl.UserServiceImpl  : Before calling albums microservice
+2023-11-04T14:05:09.060-03:00 DEBUG [users-ws, 654679c5284e7d785477a0c07723ef8e, 95397ff28c13aa43] 25700 --- [http-nio-auto-1-exec-2] com.pblgllgs.users.clients.AlbumClient   : [AlbumClient#findAllAlbums] ---> GET http://albums-ws/users/0c406a14-7c0b-4151-a7fa-70f1401611db/albums HTTP/1.1
+2023-11-04T14:05:09.060-03:00 DEBUG [users-ws, 654679c5284e7d785477a0c07723ef8e, 95397ff28c13aa43] 25700 --- [http-nio-auto-1-exec-2] com.pblgllgs.users.clients.AlbumClient   : [AlbumClient#findAllAlbums] ---> END HTTP (0-byte body)
+2023-11-04T14:05:09.295-03:00 DEBUG [users-ws, 654679c5284e7d785477a0c07723ef8e, 95397ff28c13aa43] 25700 --- [http-nio-auto-1-exec-2] com.pblgllgs.users.clients.AlbumClient   : [AlbumClient#findAllAlbums] <--- HTTP/1.1 200 (233ms)
+2023-11-04T14:05:09.295-03:00 DEBUG [users-ws, 654679c5284e7d785477a0c07723ef8e, 95397ff28c13aa43] 25700 --- [http-nio-auto-1-exec-2] com.pblgllgs.users.clients.AlbumClient   : [AlbumClient#findAllAlbums] connection: keep-alive
+2023-11-04T14:05:09.295-03:00 DEBUG [users-ws, 654679c5284e7d785477a0c07723ef8e, 95397ff28c13aa43] 25700 --- [http-nio-auto-1-exec-2] com.pblgllgs.users.clients.AlbumClient   : [AlbumClient#findAllAlbums] content-type: application/json
+2023-11-04T14:05:09.295-03:00 DEBUG [users-ws, 654679c5284e7d785477a0c07723ef8e, 95397ff28c13aa43] 25700 --- [http-nio-auto-1-exec-2] com.pblgllgs.users.clients.AlbumClient   : [AlbumClient#findAllAlbums] date: Sat, 04 Nov 2023 17:05:09 GMT
+2023-11-04T14:05:09.295-03:00 DEBUG [users-ws, 654679c5284e7d785477a0c07723ef8e, 95397ff28c13aa43] 25700 --- [http-nio-auto-1-exec-2] com.pblgllgs.users.clients.AlbumClient   : [AlbumClient#findAllAlbums] keep-alive: timeout=60
+2023-11-04T14:05:09.295-03:00 DEBUG [users-ws, 654679c5284e7d785477a0c07723ef8e, 95397ff28c13aa43] 25700 --- [http-nio-auto-1-exec-2] com.pblgllgs.users.clients.AlbumClient   : [AlbumClient#findAllAlbums] transfer-encoding: chunked
+2023-11-04T14:05:09.295-03:00 DEBUG [users-ws, 654679c5284e7d785477a0c07723ef8e, 95397ff28c13aa43] 25700 --- [http-nio-auto-1-exec-2] com.pblgllgs.users.clients.AlbumClient   : [AlbumClient#findAllAlbums] 
+2023-11-04T14:05:09.295-03:00 DEBUG [users-ws, 654679c5284e7d785477a0c07723ef8e, 95397ff28c13aa43] 25700 --- [http-nio-auto-1-exec-2] com.pblgllgs.users.clients.AlbumClient   : [AlbumClient#findAllAlbums] [{"id":1,"albumId":"50b049fb-aa34-4eed-8f5f-8b7931f38652","userId":"0c406a14-7c0b-4151-a7fa-70f1401611db","name":"black","description":"Molestias ratione explicabo sed enim delectus."},{"id":2,"albumId":"c3ceeea6-d603-46b3-a623-a03a0de5c904","userId":"0c406a14-7c0b-4151-a7fa-70f1401611db","name":"black","description":"Nihil aut beatae sed."},{"id":3,"albumId":"38df3181-8e70-4de3-a24a-ab960b2cc9ab","userId":"0c406a14-7c0b-4151-a7fa-70f1401611db","name":"violet","description":"Ducimus ea molestiae enim impedit voluptate qui."},{"id":4,"albumId":"83353574-d496-4be7-86cc-a4a12300a4c0","userId":"0c406a14-7c0b-4151-a7fa-70f1401611db","name":"pink","description":"Est illum voluptas optio consequuntur autem doloremque fugiat qui."},{"id":5,"albumId":"92a78983-3d02-4718-aa16-a6ca47f0fca6","userId":"0c406a14-7c0b-4151-a7fa-70f1401611db","name":"mint green","description":"Est pariatur ut consequatur ullam ut qui alias quia."}]
+2023-11-04T14:05:09.295-03:00 DEBUG [users-ws, 654679c5284e7d785477a0c07723ef8e, 95397ff28c13aa43] 25700 --- [http-nio-auto-1-exec-2] com.pblgllgs.users.clients.AlbumClient   : [AlbumClient#findAllAlbums] <--- END HTTP (929-byte body)
+2023-11-04T14:05:09.302-03:00 DEBUG [users-ws, 654679c5284e7d785477a0c07723ef8e, 95397ff28c13aa43] 25700 --- [http-nio-auto-1-exec-2] c.p.users.services.impl.UserServiceImpl  : After calling albums microservice
+2023-11-04T14:08:34.262-03:00  INFO [users-ws, , ] 25700 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-11-04T14:13:34.270-03:00  INFO [users-ws, , ] 25700 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-11-04T14:18:34.274-03:00  INFO [users-ws, , ] 25700 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-11-04T14:23:34.278-03:00  INFO [users-ws, , ] 25700 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-11-04T14:28:34.291-03:00  INFO [users-ws, , ] 25700 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-11-04T14:33:34.304-03:00  INFO [users-ws, , ] 25700 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-11-04T14:38:34.316-03:00  INFO [users-ws, , ] 25700 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-11-04T14:43:34.322-03:00  INFO [users-ws, , ] 25700 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-11-04T14:48:34.332-03:00  INFO [users-ws, , ] 25700 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-11-04T14:49:18.341-03:00  INFO [users-ws, , ] 25700 --- [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application USERS-WS with eureka with status DOWN
+2023-11-04T14:49:18.341-03:00  INFO [users-ws, , ] 25700 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1699120158341, current=DOWN, previous=UP]
+2023-11-04T14:49:18.342-03:00  INFO [users-ws, , ] 25700 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USERS-WS/users-ws:125c56bb-ed33-4d27-9075-93f20ee34354: registering service...
+2023-11-04T14:49:18.348-03:00  INFO [users-ws, , ] 25700 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USERS-WS/users-ws:125c56bb-ed33-4d27-9075-93f20ee34354 - registration status: 204
+2023-11-04T14:49:18.425-03:00  INFO [users-ws, , ] 25700 --- [SpringApplicationShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2023-11-04T14:49:19.307-03:00  INFO [users-ws, , ] 25700 --- [SpringApplicationShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2023-11-04T14:49:19.307-03:00  INFO [users-ws, , ] 25700 --- [SpringApplicationShutdownHook] o.s.i.a.i.AmqpInboundChannelAdapter      : stopped bean 'inbound.springCloudBus.anonymous.an6TPMSSSnitaQvXcu0DnA'
+2023-11-04T14:49:19.314-03:00  INFO [users-ws, , ] 25700 --- [SpringApplicationShutdownHook] o.s.c.stream.binder.BinderErrorChannel   : Channel 'users-ws-1.rabbit-1645383825.springCloudBusInput.errors' has 1 subscriber(s).
+2023-11-04T14:49:19.341-03:00  INFO [users-ws, , ] 25700 --- [SpringApplicationShutdownHook] o.s.i.endpoint.EventDrivenConsumer       : Removing {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2023-11-04T14:49:19.341-03:00  INFO [users-ws, , ] 25700 --- [SpringApplicationShutdownHook] o.s.i.channel.PublishSubscribeChannel    : Channel 'users-ws-1.errorChannel' has 0 subscriber(s).
+2023-11-04T14:49:19.342-03:00  INFO [users-ws, , ] 25700 --- [SpringApplicationShutdownHook] o.s.i.endpoint.EventDrivenConsumer       : stopped bean '_org.springframework.integration.errorLogger'
+2023-11-04T14:49:21.447-03:00  INFO [users-ws, , ] 25700 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-11-04T14:49:21.449-03:00  INFO [users-ws, , ] 25700 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-11-04T14:49:21.490-03:00  INFO [users-ws, , ] 25700 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-11-04T14:49:21.653-03:00  INFO [users-ws, , ] 25700 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2023-11-04T14:49:24.671-03:00  INFO [users-ws, , ] 25700 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2023-11-04T14:49:24.678-03:00  INFO [users-ws, , ] 25700 --- [SpringApplicationShutdownHook] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/} exception=I/O error on DELETE request for "http://localhost:8761/eureka/apps/USERS-WS/users-ws:125c56bb-ed33-4d27-9075-93f20ee34354": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on DELETE request for "http://localhost:8761/eureka/apps/USERS-WS/users-ws:125c56bb-ed33-4d27-9075-93f20ee34354": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
+	at org.springframework.web.client.RestTemplate.createResourceAccessException(RestTemplate.java:888)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:868)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:764)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:646)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.cancel(RestTemplateEurekaHttpClient.java:91)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:91)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:916)
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:892)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:415)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:239)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:191)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:184)
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:389)
+	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:136)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:200)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:587)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:559)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1189)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:520)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1182)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1118)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1084)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:173)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1035)
+	at org.springframework.boot.SpringApplicationShutdownHook.closeAndWait(SpringApplicationShutdownHook.java:145)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.SpringApplicationShutdownHook.run(SpringApplicationShutdownHook.java:114)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.apache.hc.client5.http.HttpHostConnectException: Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at org.apache.hc.client5.http.socket.PlainConnectionSocketFactory.lambda$connectSocket$0(PlainConnectionSocketFactory.java:85)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:569)
+	at org.apache.hc.client5.http.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:84)
+	at org.apache.hc.client5.http.socket.ConnectionSocketFactory.connectSocket(ConnectionSocketFactory.java:113)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:181)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:447)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:162)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:172)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:142)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:96)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:152)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:115)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:170)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:106)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:93)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:101)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateTransportClientFactory.lambda$restTemplate$0(RestTemplateTransportClientFactory.java:143)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:87)
+	at org.springframework.http.client.InterceptingClientHttpRequest.executeInternal(InterceptingClientHttpRequest.java:71)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:862)
+	... 39 more
+
+2023-11-04T14:49:24.678-03:00  WARN [users-ws, , ] 25700 --- [SpringApplicationShutdownHook] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: I/O error on DELETE request for "http://localhost:8761/eureka/apps/USERS-WS/users-ws:125c56bb-ed33-4d27-9075-93f20ee34354": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
+2023-11-04T14:49:24.684-03:00  INFO [users-ws, , ] 25700 --- [SpringApplicationShutdownHook] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}, exception=I/O error on DELETE request for "http://localhost:8761/eureka/apps/USERS-WS/users-ws:125c56bb-ed33-4d27-9075-93f20ee34354": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on DELETE request for "http://localhost:8761/eureka/apps/USERS-WS/users-ws:125c56bb-ed33-4d27-9075-93f20ee34354": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
+	at org.springframework.web.client.RestTemplate.createResourceAccessException(RestTemplate.java:888)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:868)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:764)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:646)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.cancel(RestTemplateEurekaHttpClient.java:91)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:121)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:80)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:916)
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:892)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:415)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:239)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:191)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:184)
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:389)
+	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:136)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:200)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:587)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:559)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1189)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:520)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1182)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1118)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1084)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:173)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1035)
+	at org.springframework.boot.SpringApplicationShutdownHook.closeAndWait(SpringApplicationShutdownHook.java:145)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.SpringApplicationShutdownHook.run(SpringApplicationShutdownHook.java:114)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.apache.hc.client5.http.HttpHostConnectException: Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at org.apache.hc.client5.http.socket.PlainConnectionSocketFactory.lambda$connectSocket$0(PlainConnectionSocketFactory.java:85)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:569)
+	at org.apache.hc.client5.http.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:84)
+	at org.apache.hc.client5.http.socket.ConnectionSocketFactory.connectSocket(ConnectionSocketFactory.java:113)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:181)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:447)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:162)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:172)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:142)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:96)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:152)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:115)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:170)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:106)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:93)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:101)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateTransportClientFactory.lambda$restTemplate$0(RestTemplateTransportClientFactory.java:143)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:87)
+	at org.springframework.http.client.InterceptingClientHttpRequest.executeInternal(InterceptingClientHttpRequest.java:71)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:862)
+	... 40 more
+
+2023-11-04T14:49:24.684-03:00  WARN [users-ws, , ] 25700 --- [SpringApplicationShutdownHook] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: I/O error on DELETE request for "http://localhost:8761/eureka/apps/USERS-WS/users-ws:125c56bb-ed33-4d27-9075-93f20ee34354": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
+2023-11-04T14:49:24.684-03:00 ERROR [users-ws, , ] 25700 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USERS-WS/users-ws:125c56bb-ed33-4d27-9075-93f20ee34354 - de-registration failedCannot execute request on any known server
+
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-2.0.1.jar:2.0.1]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71) ~[eureka-client-2.0.1.jar:2.0.1]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74) ~[eureka-client-2.0.1.jar:2.0.1]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) ~[eureka-client-2.0.1.jar:2.0.1]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71) ~[eureka-client-2.0.1.jar:2.0.1]
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:916) ~[eureka-client-2.0.1.jar:2.0.1]
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:892) ~[eureka-client-2.0.1.jar:2.0.1]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457) ~[spring-beans-6.0.13.jar:6.0.13]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:415) ~[spring-beans-6.0.13.jar:6.0.13]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:239) ~[spring-beans-6.0.13.jar:6.0.13]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:191) ~[spring-beans-6.0.13.jar:6.0.13]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:184) ~[spring-beans-6.0.13.jar:6.0.13]
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:389) ~[spring-cloud-context-4.0.4.jar:4.0.4]
+	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:136) ~[spring-cloud-context-4.0.4.jar:4.0.4]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:200) ~[spring-beans-6.0.13.jar:6.0.13]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:587) ~[spring-beans-6.0.13.jar:6.0.13]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:559) ~[spring-beans-6.0.13.jar:6.0.13]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1189) ~[spring-beans-6.0.13.jar:6.0.13]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:520) ~[spring-beans-6.0.13.jar:6.0.13]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1182) ~[spring-beans-6.0.13.jar:6.0.13]
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1118) ~[spring-context-6.0.13.jar:6.0.13]
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1084) ~[spring-context-6.0.13.jar:6.0.13]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:173) ~[spring-boot-3.1.5.jar:3.1.5]
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1035) ~[spring-context-6.0.13.jar:6.0.13]
+	at org.springframework.boot.SpringApplicationShutdownHook.closeAndWait(SpringApplicationShutdownHook.java:145) ~[spring-boot-3.1.5.jar:3.1.5]
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75) ~[na:na]
+	at org.springframework.boot.SpringApplicationShutdownHook.run(SpringApplicationShutdownHook.java:114) ~[spring-boot-3.1.5.jar:3.1.5]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2023-11-04T14:49:24.719-03:00  INFO [users-ws, , ] 25700 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
