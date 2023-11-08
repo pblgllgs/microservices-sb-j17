@@ -2,6 +2,8 @@ package com.pblgllgs.users.services.impl;
 
 import com.pblgllgs.users.clients.AlbumClient;
 import com.pblgllgs.users.dto.UserDto;
+import com.pblgllgs.users.model.entities.AuthorityEntity;
+import com.pblgllgs.users.model.entities.RoleEntity;
 import com.pblgllgs.users.model.entities.UserEntity;
 import com.pblgllgs.users.model.responses.AlbumResponseModel;
 import com.pblgllgs.users.repositories.UserRepository;
@@ -9,6 +11,8 @@ import com.pblgllgs.users.services.UserService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.modelmapper.ModelMapper;
+import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
@@ -16,6 +20,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
 import java.util.UUID;
 
@@ -67,6 +72,21 @@ public class UserServiceImpl implements UserService {
         if (userEntity == null) {
             throw new UsernameNotFoundException("USER_NOT_FOUND");
         }
-        return new User(userEntity.getEmail(), userEntity.getEncryptedPassword(), true, true, true, true, new ArrayList<>());
+        Collection<GrantedAuthority> authorities = new ArrayList<>();
+        Collection<RoleEntity> roles = userEntity.getRoles();
+        roles.forEach(role -> {
+            authorities.add(new SimpleGrantedAuthority(role.getName()));
+            Collection<AuthorityEntity> authoritiesEntities = role.getAuthorities();
+            authoritiesEntities.forEach(authority -> authorities.add(new SimpleGrantedAuthority(authority.getName())));
+        });
+        return new User(
+                userEntity.getEmail(),
+                userEntity.getEncryptedPassword(),
+                true,
+                true,
+                true,
+                true,
+                authorities
+        );
     }
 }

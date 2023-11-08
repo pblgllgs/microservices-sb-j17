@@ -8,12 +8,12 @@ import com.pblgllgs.users.services.UserService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext;
 import org.springframework.core.env.Environment;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -29,23 +29,25 @@ public class UserController {
     @GetMapping("/status/check")
     public String status() {
         return "Users Status UP on port: " +
-                applicationContext.getWebServer().getPort()+" and "+
-                environment.getProperty("token.secret")+ " in the "+
+                applicationContext.getWebServer().getPort() + " and " +
+                environment.getProperty("token.secret") + " in the " +
                 environment.getProperty("message.profile") + " environment";
     }
 
     @PostMapping
     public ResponseEntity<CreateUserResponseModel> saveUser(@Valid @RequestBody CreateUserRequestModel userRequestModel) {
-        UserDto userDto = mapper.map(userRequestModel,UserDto.class);
+        UserDto userDto = mapper.map(userRequestModel, UserDto.class);
         UserDto userDtoSaved = userService.createUser(userDto);
-        CreateUserResponseModel userResponseModel =  mapper.map(userDtoSaved,CreateUserResponseModel.class);
+        CreateUserResponseModel userResponseModel = mapper.map(userDtoSaved, CreateUserResponseModel.class);
         return ResponseEntity.status(HttpStatus.OK).body(userResponseModel);
     }
 
-    @GetMapping(value = "/{userId}", produces = {MediaType.APPLICATION_JSON_VALUE,MediaType.APPLICATION_XML_VALUE})
-    public ResponseEntity<UserResponseModel> getUser(@PathVariable("userId") String userId){
+    @PreAuthorize("principal == #userId")
+//    @PostAuthorize("principal == returnObject.getBody().getUserId()")
+    @GetMapping(value = "/{userId}", produces = {MediaType.APPLICATION_JSON_VALUE, MediaType.APPLICATION_XML_VALUE})
+    public ResponseEntity<UserResponseModel> getUser(@PathVariable("userId") String userId) {
         UserDto userDto = userService.findUserById(userId);
-        UserResponseModel returnValue =  new ModelMapper().map(userDto,UserResponseModel.class);
-        return new ResponseEntity<>(returnValue,HttpStatus.OK);
+        UserResponseModel returnValue = new ModelMapper().map(userDto, UserResponseModel.class);
+        return new ResponseEntity<>(returnValue, HttpStatus.OK);
     }
 }

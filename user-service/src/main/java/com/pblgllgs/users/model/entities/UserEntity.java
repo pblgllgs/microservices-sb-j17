@@ -8,6 +8,7 @@ import lombok.NoArgsConstructor;
 
 import java.io.Serial;
 import java.io.Serializable;
+import java.util.Collection;
 
 @Data
 @Entity
@@ -51,4 +52,21 @@ public class UserEntity implements Serializable {
     private String userId;
     @Column(name = "encrypted_password", nullable = false)
     private String encryptedPassword;
+
+    @ManyToMany(
+            cascade = {CascadeType.PERSIST},
+            fetch = FetchType.EAGER
+    )
+    @JoinTable(
+            name = "users_roles",
+            joinColumns = @JoinColumn(
+                    name = "users_id",
+                    referencedColumnName = "id"
+            ),
+            inverseJoinColumns = @JoinColumn(
+                    name = "roles_id",
+                    referencedColumnName = "id"
+            )
+    )
+    private Collection<RoleEntity> roles;
 }
