@@ -19,10 +19,7 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.List;
-import java.util.UUID;
+import java.util.*;
 
 @Service
 @RequiredArgsConstructor
@@ -53,14 +50,23 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public UserDto findUserById(String userId) {
+    public void deleteUser(String userId) {
+        UserEntity userEntity = userRepository.findByUserId(userId);
+        if (userEntity == null) {
+            throw new UsernameNotFoundException("USER_NOT_FOUND");
+        }
+        userRepository.deleteById(userEntity.getId());
+    }
+
+    @Override
+    public UserDto findUserById(String userId, String authorization) {
         UserEntity userEntity = userRepository.findByUserId(userId);
         if (userEntity == null) {
             throw new UsernameNotFoundException("user not found");
         }
         UserDto userDto = mapper.map(userEntity, UserDto.class);
         log.debug("Before calling albums microservice");
-        List<AlbumResponseModel> userAlbums = albumClient.findAllAlbums(userId);
+        List<AlbumResponseModel> userAlbums = albumClient.findAllAlbums(userId, authorization);
         log.debug("After calling albums microservice");
         userDto.setAlbums(userAlbums);
         return userDto;

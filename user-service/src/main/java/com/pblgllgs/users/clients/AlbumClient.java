@@ -6,6 +6,7 @@ import io.github.resilience4j.retry.annotation.Retry;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestHeader;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -16,7 +17,7 @@ public interface AlbumClient {
     @GetMapping("/users/{id}/albums")
     @Retry(name = "albums-ws")
     @CircuitBreaker(name = "albums-ws", fallbackMethod = "getAlbumsFallback")
-    List<AlbumResponseModel> findAllAlbums(@PathVariable String id);
+    List<AlbumResponseModel> findAllAlbums(@PathVariable String id, @RequestHeader("Authorization") String authorization);
 
     default List<AlbumResponseModel> getAlbumsFallback(String id, Throwable exception){
         System.out.println("Param = " + id);

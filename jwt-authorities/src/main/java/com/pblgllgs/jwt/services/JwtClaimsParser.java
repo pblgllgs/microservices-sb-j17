@@ -19,7 +19,7 @@ import java.util.stream.Collectors;
 
 public class JwtClaimsParser {
 
-    private final Jwt<?, ?> jwtObject;
+     Jwt<?, ?> jwtObject;
 
     public JwtClaimsParser(String jwt, String secretToken) {
         this.jwtObject = parseJwt(jwt, secretToken);

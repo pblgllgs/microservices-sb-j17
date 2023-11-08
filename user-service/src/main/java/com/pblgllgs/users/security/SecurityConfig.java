@@ -15,6 +15,8 @@ import org.springframework.security.config.annotation.web.configurers.AbstractHt
 import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
+import org.springframework.security.web.access.expression.WebExpressionAuthorizationManager;
+import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 
 @Configuration
 @EnableMethodSecurity(prePostEnabled = true)
@@ -31,30 +33,35 @@ public class SecurityConfig {
     }
 
     @Bean
-    public SecurityFilterChain securityFilterChain(HttpSecurity httpSecurity) throws Exception {
+    protected SecurityFilterChain configure(HttpSecurity http) throws Exception {
 
-        AuthenticationManagerBuilder authenticationManagerBuilder = httpSecurity.getSharedObject(AuthenticationManagerBuilder.class);
-        authenticationManagerBuilder.userDetailsService(userService).passwordEncoder(bCryptPasswordEncoder);
+        // Configure AuthenticationManagerBuilder
+        AuthenticationManagerBuilder authenticationManagerBuilder =
+                http.getSharedObject(AuthenticationManagerBuilder.class);
+
+        authenticationManagerBuilder.userDetailsService(userService)
+                .passwordEncoder(bCryptPasswordEncoder);
+
         AuthenticationManager authenticationManager = authenticationManagerBuilder.build();
 
-        AuthenticationFilter authenticationFilter = new AuthenticationFilter(authenticationManager, userService, environment);
+        // Create AuthenticationFilter
+        AuthenticationFilter authenticationFilter =
+                new AuthenticationFilter(authenticationManager,userService, environment);
         authenticationFilter.setFilterProcessesUrl(environment.getProperty("login.url.path"));
-        return httpSecurity
-                .csrf(AbstractHttpConfigurer::disable)
-                .authorizeHttpRequests(http ->
-                        http
-                                .requestMatchers(HttpMethod.POST, "/users").permitAll()
-                                .requestMatchers(HttpMethod.GET, "/users/{userId}").permitAll()
-                                .requestMatchers(HttpMethod.GET, "/users/status/check").permitAll()
-                                .requestMatchers(HttpMethod.GET, "/actuator/**").permitAll()
-                                .requestMatchers(HttpMethod.GET, "/actuator/circuitbreakerevents").permitAll()
-                                .requestMatchers(HttpMethod.GET, "/actuator/circuitbreakers").permitAll()
-                )
-                .addFilter(new AuthorizationFilter(authenticationManager,environment))
+
+        http.csrf((csrf) -> csrf.disable());
+
+        http.authorizeHttpRequests((authz) -> authz
+                        .requestMatchers(new AntPathRequestMatcher("/users/**")).access(
+                                new WebExpressionAuthorizationManager("hasIpAddress('127.0.0.1')"))
+                        .requestMatchers(new AntPathRequestMatcher("/h2-console/**")).permitAll())
+                .addFilter(new AuthorizationFilter(authenticationManager, environment))
                 .addFilter(authenticationFilter)
                 .authenticationManager(authenticationManager)
-                .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
-                .build();
+                .sessionManagement((session) -> session
+                        .sessionCreationPolicy(SessionCreationPolicy.STATELESS));
+        return http.build();
+
     }
 
 }

@@ -1,6 +1,6 @@
 package com.pblgllgs.users.security.filters;
 
-import io.jsonwebtoken.*;
+import com.pblgllgs.jwt.services.JwtClaimsParser;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;
@@ -12,11 +12,7 @@ import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.web.authentication.www.BasicAuthenticationFilter;
 import org.springframework.stereotype.Component;
 
-import javax.crypto.SecretKey;
-import javax.crypto.spec.SecretKeySpec;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Base64;
 
 /**
  * @author pblgl
@@ -36,43 +32,37 @@ public class AuthorizationFilter extends BasicAuthenticationFilter {
 
     @Override
     protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain chain) throws IOException, ServletException {
-        String authorizationHeader =  request.getHeader(environment.getProperty("authorization.token.header.name"));
+        String authorizationHeader = request.getHeader(environment.getProperty("authorization.token.header.name"));
         if (authorizationHeader == null || !authorizationHeader.startsWith(environment.getProperty("authorization.token.header.prefix"))) {
-            chain.doFilter(request,response);
+            chain.doFilter(request, response);
             return;
         }
 
-        UsernamePasswordAuthenticationToken authentication =  getAuthentication(request);
+        UsernamePasswordAuthenticationToken authentication = getAuthentication(request);
         SecurityContextHolder.getContext().setAuthentication(authentication);
-        chain.doFilter(request,response);
+        chain.doFilter(request, response);
     }
 
-    private UsernamePasswordAuthenticationToken getAuthentication(HttpServletRequest request){
+    private UsernamePasswordAuthenticationToken getAuthentication(HttpServletRequest request) {
         String authorizationHeader = request.getHeader(environment.getProperty("authorization.token.header.name"));
 
-        if (authorizationHeader == null){
+        if (authorizationHeader == null) {
             return null;
         }
 
-        String token = authorizationHeader.replace(environment.getProperty("authorization.token.header.prefix"),"");
-        String tokenSecret =  environment.getProperty("token.secret");
+        String token = authorizationHeader.replace(environment.getProperty("authorization.token.header.prefix"), "");
+        String tokenSecret = environment.getProperty("token.secret");
 
-        if (tokenSecret == null){
+        if (tokenSecret == null) {
             return null;
         }
 
-        byte[] secretKeyBytes = Base64.getEncoder().encode(tokenSecret.getBytes());
-        SecretKey secretKey = new SecretKeySpec(secretKeyBytes, SignatureAlgorithm.HS512.getJcaName());
+        JwtClaimsParser jwtClaimsParser = new JwtClaimsParser(token, tokenSecret);
+        String userId = jwtClaimsParser.getJwtSubject();
 
-        JwtParser jwtParser = Jwts.parserBuilder()
-                .setSigningKey(secretKey)
-                .build();
-
-        Jwt<Header, Claims> jwt = jwtParser.parse(token);
-        String userId =  jwt.getBody().getSubject();
-        if (userId == null){
+        if (userId == null) {
             return null;
         }
-        return new UsernamePasswordAuthenticationToken(userId,null, new ArrayList<>());
+        return new UsernamePasswordAuthenticationToken(userId, null, jwtClaimsParser.getUserAuthorities());
     }
 }

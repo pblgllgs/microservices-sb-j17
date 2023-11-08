@@ -42,12 +42,20 @@ public class UserController {
         return ResponseEntity.status(HttpStatus.OK).body(userResponseModel);
     }
 
-    @PreAuthorize("principal == #userId")
+//    @PreAuthorize("principal == #userId")
 //    @PostAuthorize("principal == returnObject.getBody().getUserId()")
+    @PreAuthorize("hasRole('ADMIN') or principal == #userId")
     @GetMapping(value = "/{userId}", produces = {MediaType.APPLICATION_JSON_VALUE, MediaType.APPLICATION_XML_VALUE})
-    public ResponseEntity<UserResponseModel> getUser(@PathVariable("userId") String userId) {
-        UserDto userDto = userService.findUserById(userId);
+    public ResponseEntity<UserResponseModel> getUser(@PathVariable("userId") String userId, @RequestHeader("Authorization") String authorization) {
+        UserDto userDto = userService.findUserById(userId, authorization);
         UserResponseModel returnValue = new ModelMapper().map(userDto, UserResponseModel.class);
         return new ResponseEntity<>(returnValue, HttpStatus.OK);
+    }
+
+    @PreAuthorize("hasRole('ADMIN') or hasAuthority('PROFILE_DELETE') or principal == #userId")
+    @DeleteMapping("/{userId}")
+    public ResponseEntity<String> deleteUser(@PathVariable("userId") String userId){
+        userService.deleteUser(userId);
+        return new ResponseEntity<>("OK",HttpStatus.OK);
     }
 }
