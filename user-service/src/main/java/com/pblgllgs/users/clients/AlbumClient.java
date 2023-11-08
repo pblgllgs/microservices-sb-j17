@@ -16,10 +16,10 @@ public interface AlbumClient {
 
     @GetMapping("/users/{id}/albums")
     @Retry(name = "albums-ws")
-    @CircuitBreaker(name = "albums-ws", fallbackMethod = "getAlbumsFallback")
+    @CircuitBreaker(name = "albums-ws", fallbackMethod = "getAlbumsFallbackCircuitBreaker")
     List<AlbumResponseModel> findAllAlbums(@PathVariable String id, @RequestHeader("Authorization") String authorization);
 
-    default List<AlbumResponseModel> getAlbumsFallback(String id, Throwable exception){
+    default List<AlbumResponseModel> getAlbumsFallbackCircuitBreaker(String id,String authorization, Throwable exception){
         System.out.println("Param = " + id);
         System.out.println("Exception took place: "+ exception.getMessage());
         return new ArrayList<>();
